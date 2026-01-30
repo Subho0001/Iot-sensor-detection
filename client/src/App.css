@@ -1,0 +1,29 @@
+.dashboard { font-family: sans-serif; padding: 20px; background: #f0f2f5; min-height: 100vh; }
+header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; }
+.metrics { display: flex; gap: 10px; }
+.card { background: white; padding: 15px; border-radius: 8px; font-weight: bold; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+.grid { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+.chart-box, .alert-box { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+ul { list-style: none; padding: 0; max-height: 300px; overflow-y: auto; }
+li { padding: 10px; border-bottom: 1px solid #eee; }
+.critical { color: red; background: #fff0f0; border-left: 4px solid red; }
+.warning { color: orange; border-left: 4px solid orange; }
+.health-score-card {
+    background: white;
+    padding: 10px 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 2px solid #ddd; /* Will be overridden by React inline style */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.health-score-card h2 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+.health-score-card span {
+    color: #666;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
